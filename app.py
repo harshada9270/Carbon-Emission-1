@@ -48,8 +48,8 @@ feature_cols = artifacts["feature_columns"]
 historical_df = artifacts["historical_df"]
 
 st.title("🌍 Carbon Emissions Prediction System")
-st.markdown("### Predict future carbon emissions using machine learning")
-st.write("Select a country and target year to see AI-powered predictions with trend analysis.")
+st.markdown("### Predict future carbon emissions")
+st.write("Select a country and target year for prediction")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -115,4 +115,5 @@ ax.legend(fontsize=11, loc='upper left')
 ax.grid(alpha=0.3)
 plt.tight_layout()
 st.pyplot(fig)
+
 
